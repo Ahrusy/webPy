@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Карточки пользователей</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .user-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .user-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .user-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ddd;
+            margin-bottom: 15px;
+            transition: border-color 0.3s ease;
+        }
+
+        .user-photo:hover {
+            border-color: #007BFF;
+        }
+
+        .user-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+
+        .user-email,
+        .user-birthdate,
+        .user-city {
+            color: #555;
+            font-size: 0.95em;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="user-card">
+        <img src="https://i.pravatar.cc/150?img=1" alt="Фото пользователя" class="user-photo">
+        <div class="user-name">Иванов Иван Иванович</div>
+        <div class="user-email">ivanov@example.com</div>
+        <div class="user-birthdate">Дата рождения: 15.08.1985</div>
+        <div class="user-city">Город: Ташкент</div>
+    </div>
+
+    <div class="user-card">
+        <img src="https://i.pravatar.cc/150?img=2" alt="Фото пользователя" class="user-photo">
+        <div class="user-name">Петрова Анна Сергеевна</div>
+        <div class="user-email">petrova@example.com</div>
+        <div class="user-birthdate">Дата рождения: 03.02.1992</div>
+        <div class="user-city">Город: Москва</div>
+    </div>
+
+    <div class="user-card">
+        <img src="https://i.pravatar.cc/150?img=3" alt="Фото пользователя" class="user-photo">
+        <div class="user-name">Сидоров Олег Петрович</div>
+        <div class="user-email">sidorov@example.com</div>
+        <div class="user-birthdate">Дата рождения: 22.11.1978</div>
+        <div class="user-city">Город: Лондон</div>
+    </div>
+
+</body>
+</html>
